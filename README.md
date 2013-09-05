@@ -13,3 +13,4 @@ psql -d marsnews
 \I ./sql/news.sql
 
 
+
