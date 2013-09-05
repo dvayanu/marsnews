@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+  <context>
+    <package>net.anotheria.marsnews.gen</package>
+    <owner>mars</owner>
+    <applicationName>marsnews</applicationName>
+    <servletMapping>mn</servletMapping>
+	<encoding>utf-8</encoding>
+	<languages>
+		<supported>
+			<language>de</language>
+			<language>en</language>
+		</supported>
+		<default>
+			<language>de</language>
+		</default>
+	</languages>
+  </context>

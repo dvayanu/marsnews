@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<datadefinitions>
+  <module name="RankedCountries" storageType="db">
+  	<document name="RankedCountry">
+  		<property name="rank" type="int"/>
+  		<property name="countryName" type="string"/>
+  		<property name="countryId" type="int"/>
+  		<property name="land" type="int"/>
+  		<property name="networth" type="int"/>
+  		<property name="color" type="int"/>
+  		<property name="clan" type="string"/>
+  		<property name="gov" type="int"/>
+  		<property name="gdi" type="boolean"/>
+  		<property name="dead" type="boolean"/>
+  		<property name="protection" type="boolean"/>
+  	</document>
+  </module>
+</datadefinitions>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<!-- File Appenders for generated code -->
+
+	<!-- File Appender for debug and higher -->
+	<appender name="DebugGenAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-gen-debug.log" />
+		<param name="Threshold" value="DEBUG" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+	<!-- File Appender for info and higher -->
+	<appender name="InfoGenAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-gen-info.log" />
+		<param name="Threshold" value="INFO" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+	<!-- File Appender for warn and higher -->
+	<appender name="WarnGenAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-gen-warn.log" />
+		<param name="Threshold" value="WARN" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+	<!-- File Appender for error and higher -->
+	<appender name="ErrorGenAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-gen-error.log" />
+		<param name="Threshold" value="ERROR" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+	<!-- File Appender for fatal and higher -->
+	<appender name="FatalGenAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-gen-fatal.log" />
+		<param name="Threshold" value="FATAL" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+
+	<!-- File Appenders for written code -->
+
+	<!-- File Appender for debug and higher -->
+	<appender name="DebugAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-debug.log" />
+		<param name="Threshold" value="DEBUG" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+	<!-- File Appender for info and higher -->
+	<appender name="InfoAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-info.log" />
+		<param name="Threshold" value="INFO" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+	<!-- File Appender for warn and higher -->
+	<appender name="WarnAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-warn.log" />
+		<param name="Threshold" value="WARN" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+	<!-- File Appender for error and higher -->
+	<appender name="ErrorAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-error.log" />
+		<param name="Threshold" value="ERROR" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+	<!-- File Appender for fatal and higher -->
+	<appender name="FatalAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/marsnews-fatal.log" />
+		<param name="Threshold" value="FATAL" />
+		<param name="MaxFileSize" value="100MB" />  
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+
+	<!-- Console appender -->
+	<appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<param name="Threshold" value="WARN" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%r %d{ISO8601} %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+
+	<logger name="net.anotheria.marsnews.gen" additivity="false">
+		<level value="INFO"/>
+		<appender-ref ref="DebugGenAppender"/>
+		<appender-ref ref="InfoGenAppender"/>
+		<appender-ref ref="WarnGenAppender"/>
+		<appender-ref ref="ErrorGenAppender"/>
+		<appender-ref ref="FatalGenAppender"/>
+	</logger>
+
+	<logger name="net.anotheria.marsnews" additivity="false">
+		<level value="INFO"/>
+		<appender-ref ref="DebugAppender"/>
+		<appender-ref ref="InfoAppender"/>
+		<appender-ref ref="WarnAppender"/>
+		<appender-ref ref="ErrorAppender"/>
+		<appender-ref ref="FatalAppender"/>
+	</logger>
+
+</log4j:configuration>

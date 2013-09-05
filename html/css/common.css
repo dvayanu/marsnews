@@ -1,0 +1,92 @@
+* {margin:0; padding:0; font-size:12px; color:black; outline:none;}
+a {color:#2253d1; text-decoration:none;}
+a:hover {text-decoration:underline;}
+img {border:0;}
+.clear {clear:both; float:none;}
+body {background:#787878; font-family:Tahoma, Arial, sans-serif;}
+
+.header {height:120px; background:url("../images/head_bg.gif") 0 0 repeat-x; position:relative; z-index:7;}
+.header .in {height:120px; background:url("../images/head_l.gif") 0 0 no-repeat;}
+.logo {margin:76px 0 0 110px; display:block; float:left;}
+.login {float:right; position:relative; margin:17px 15px 0 0;}
+.login ul li {display:block; float:left; color:white; position:relative;}
+.login ul li a {color:white; font-size:14px; position:relative; z-index:11;}
+
+.flr {float:right;}
+.fll {float:left;}
+.search {margin:50px 10px 0 0; float:right;}
+.search input {height:25px; width:188px; padding:0 6px; background:url("../images/search_inp.gif") 0 0 no-repeat; font-size:14px; color:#7e8eb4; border:0; float:left; margin-right:10px; line-height:25px;}
+.search .button {height:25px; background:url("../images/buttons.gif") 100% -25px no-repeat; display:block; float:left; padding-right:2px; margin-right:0;}
+.search .button span {height:21px; background:url("../images/buttons.gif") 0 0 no-repeat; display:block; float:left; font-size:12px; color:white; font-weight:bold; padding:4px 10px 0 12px;}
+.search .button:hover {background:url("../images/buttons.gif") 100% -50px no-repeat; text-decoration:none;}
+.search .button:hover span {background:url("../images/buttons.gif") 0 -75px no-repeat;}
+
+.menu {height:35px; display:block; text-align:center; background:url("../images/menu_bg.gif") 0 0 repeat-x; padding:6px 0 0 0; position:relative; z-index:5;}
+.menu li {display:inline; list-style-type:none; margin-right:45px;}
+.menu li a {line-height:20px; }
+.menu li a:hover {text-decoration:none;}
+.menu li a span {font-size:14px; line-height:20px; color:white;}
+.menu li.active a {background:url("../images/menu_active.gif") 100% -20px no-repeat; padding:2px 10px 3px 0;}
+.menu li.active a span {background:url("../images/menu_active.gif") 0 0 no-repeat; padding:0 8px 4px 18px;}
+
+.main {background:#f0f0f0; padding:10px;}
+.filter {padding:0 0 0 5px; margin-top:-4px; margin-bottom:10px;}
+.filter li {list-style-type:none; display:inline; line-height:25px; margin-right:3px;}
+.filter li a {background:url("../images/li_sep.gif") 100% 8px no-repeat; padding-right:7px;}
+.filter li.active a {color:black; font-weight:bold;}
+.filter li.last a {background:none;}
+
+.content {}
+.content .top {height:10px; background:url("../images/borders.gif") 100% -10px no-repeat; padding-right:10px;}
+.content .top div {height:10px; background:url("../images/borders.gif") 0 0 no-repeat;}
+.content .in {background:url("../images/bord_l.gif") 0 0 repeat-y;}
+.content .in .in_r {background:url("../images/bord_r.gif") 100% 0 repeat-y #dedede; padding:2px 14px 2px 7px;; margin-left:7px;}
+.content .bot {height:10px; background:url("../images/borders.gif") 100% -20px no-repeat; padding-right:10px;}
+.content .bot div {height:10px; background:url("../images/borders.gif") 0 -30px no-repeat;}
+.pr_per {padding-right:40px;}
+h2 {color:#cd1600; font-size:16px; margin-bottom:8px;}
+h3 {color:#cd1600; font-size:14px; margin:0 0 6px 10px;}
+
+.horizontal {}
+.horizontal thead th {font-size:14px; font-weight:bold; text-align:left; height:28px; border-bottom:2px solid #b0b0b0; padding:0 20px 0 10px;}
+.horizontal tbody td, .vertical tbody td {padding:6px 20px 6px 10px;}
+.horizontal tbody tr.light td, .vertical tbody tr.light td  {background:#f0f0f0;}
+.ads {text-align:center; padding:6px 0 !important;}
+
+.paginator {text-align:right; padding-top:10px; margin-bottom:10px;}
+.paginator li {list-style-type:none; display:inline; padding:0 2px}
+.paginator li.prev a, .paginator li.next a {font-weight:bold;}
+.paginator li.prev a {padding-left:10px; background:url("../images/arrows.gif") 0 6px no-repeat;}
+.paginator li.next a {padding-right:10px; background:url("../images/arrows.gif") 100% -34px no-repeat}
+.paginator li.prev.dis a {background:url("../images/arrows.gif") 0 -64px no-repeat; color:#808080;}
+.paginator li.next.dis a {background:url("../images/arrows.gif") 100% -85px no-repeat; color:#808080;}
+.paginator li.curr a {color:black; font-weight:bold;}
+
+.vertical {margin-bottom:16px;}
+.vertical thead th {font-size:14px; font-weight:bold; text-align:left; height:28px; border-bottom:2px solid #b0b0b0; padding:0 20px 0 10px; color:#cd1600;}
+.vertical tbody td {padding:5px 20px 5px 10px;}
+.vertical tbody td strong {font-size:14px;}
+.vertical thead th span {font-weight:normal;}
+
+.footer {background:url("../images/foot_bg.gif") 0 0 repeat-x; padding:20px 10px;}
+.footer span {font-size:10px; color:white; float:left; display:block; margin-top:7px;}
+.footer a {display:block; float:right;}
+
+label {font-size:14px; display:block; margin-bottom:5px; float:left;}
+.text {height:25px; float:left; background:url("../images/input.gif") 100% -25px no-repeat; padding-right:3px; margin-right:8px; margin-bottom:10px;}
+.text input {float:left; display:block; height:25px; background:url("../images/input.gif") 0 0 no-repeat; padding:0 3px 0 6px; border:0; font-size:14px; color:white; line-height:25px;}
+input.fll {margin:6px 8px 0 0;}
+.r_label {margin-top:3px;}
+.button {height:25px; background:url("../images/buttons.gif") 100% -125px no-repeat; padding-right:2px; float:left; display:block; margin-right:10px;}
+.button span {height:21px; background:url("../images/buttons.gif") 0 -100px no-repeat; font-size:12px; color:white; font-weight:bold; padding:4px 10px 0 12px; float:left; display:block;}
+.button:hover {text-decoration:none; background:url("../images/buttons.gif") 100% -150px no-repeat;}
+.button:hover span {background:url("../images/buttons.gif") 0 -175px no-repeat;}
+.f_14 {font-size:14px;}
+.mt_3 {margin-top:3px; display:block;}
+
+.log {}
+.log.active a {color:#080f22;}
+.log.active .log_form {display:block;} 
+.log_form {position:absolute; width:107px; height:93px; background:url("../images/log_form.gif") 0 0 no-repeat; top:-4px; z-index:10; overflow:hidden; left:-84px; padding:37px 10px 0 10px; display:none;}
+.log_form input {height:25px; width:100px; background:url("../images/log_input.gif") 0 0 no-repeat; border:0; margin-bottom:5px; padding:0 4px; color:white; line-height:25px;}
+.log_form .button {float:right; margin-right:0;}

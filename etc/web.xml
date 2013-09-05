@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/j2ee/dtds/web-app_2.3.dtd">
+
+<web-app>
+    <display-name>marsnews</display-name>
+    
+	<filter>
+        <filter-name>MarsNewsFilter</filter-name>
+       	<filter-class>net.anotheria.marsnews.presentation.MarsNewsFilter</filter-class>
+		<init-param>
+			<param-name>path</param-name>
+			<param-value>/show/</param-value>
+		</init-param>
+   	</filter>
+   	<filter-mapping>
+       	<filter-name>MarsNewsFilter</filter-name>
+   	    <url-pattern>/show/*</url-pattern>
+    </filter-mapping>
+	<filter>
+        <filter-name>UserAgentFilter</filter-name>
+        <filter-class>net.anotheria.moskito.web.filters.UserAgentFilter</filter-class>
+		<init-param>
+			<param-name>limit</param-name>
+			<param-value>100</param-value>
+		</init-param>
+    </filter>
+
+	<filter>
+        <filter-name>RefererFilter</filter-name>
+        <filter-class>net.anotheria.moskito.web.filters.RefererFilter</filter-class>
+		<init-param>
+			<param-name>limit</param-name>
+			<param-value>100</param-value>
+		</init-param>
+    </filter>
+
+	<filter>
+        <filter-name>RequestURIFilter</filter-name>
+        <filter-class>net.anotheria.moskito.web.filters.RequestURIFilter</filter-class>
+		<init-param>
+			<param-name>limit</param-name>
+			<param-value>200</param-value>
+		</init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>RequestURIFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>UserAgentFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>RefererFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+	<welcome-file-list>
+	    	<welcome-file>index.html</welcome-file>
+  	</welcome-file-list>
+
+	<!-- taglib definitions -->
+	<!--jsp-config-->
+	<!--/jsp-config-->
+
+  	<listener>
+		<listener-class>
+			net.anotheria.marsnews.shared.presentation.util.ContextInitializer
+		</listener-class>
+	</listener>
+
+  		
+	
+</web-app> 

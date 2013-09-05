@@ -1,0 +1,7 @@
+{
+vendor: "postgresql",
+driver: "org.postgresql.Driver",
+db: "marsnews",
+username: "marsuser",
+password: "geheim",
+}
