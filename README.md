@@ -10,7 +10,7 @@ You will need a database, prefereably postgres:
 createdb marsnews   
 createuser marsuser   
 psql -d marsnews   
-\I ./sql/news.sql
+\i ./sql/news.sql
 
 
 
